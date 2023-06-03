@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap 5 - Q.T.Mang [Miki - Tran]</title>
+    <!-- CSS mới nhất và đã được rút gọn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"><p>Di chuột qua link để xem sự thay đổi màu sắc.</p>
+        <a href="#" class="text-muted">Link bị muted.</a>
+        <a href="#" class="text-primary">Link chính.</a>
+        <a href="#" class="text-success">Link thành công.</a>
+        <a href="#" class="text-info">Link thông tin.</a>
+        <a href="#" class="text-warning">Link cảnh báo.</a>
+        <a href="#" class="text-danger">Link nguy hiểm.</a>
+        <a href="#" class="text-secondary">Link phụ.</a>
+        <a href="#" class="text-dark">Link màu xám đen.</a>
+        <a href="#" class="text-body">Link màu body/đen.</a>
+        <a href="#" class="text-light">Link màu xám.</a></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <div class="container-fluid border">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Màu sắc theo ngữ cảnh</h2>
+        <p>Sử dụng các class theo ngữ cảnh để cung cấp những ý nghĩa thông qua màu sắc:</p>
+        <!-- opacity danh cho mau trang & den -->
+        <p class="text-muted">Văn bản bị muted.</p>
+        <p class="text-primary">Văn bản quan trọng.</p>
+        <p class="text-success">Văn bản chỉ ra sự thành công.</p>
+        <p class="text-info">Văn bản đại diện cho một số thông tin.</p>
+        <p class="text-warning">Văn bản này là cảnh báo.</p>
+        <p class="text-danger">Văn bản thông báo sự nguy hiểm.</p>
+        <p class="text-secondary">Văn bản phụ.</p>
+        <p class="text-dark">Văn bản này có màu xám đen.</p>
+        <p class="text-body bg-light">Màu body mặc định (thường là màu đen).</p>
+        <p class="text-light bg-secondary">Văn bản màu xám nhạt (trên nền trắng).</p>
+        <p class="text-white bg-dark">Văn bản màu trắng (trên nền trắng).</p>
+      </div>
+      <div class="col-md-6">
+        <p>Sử dụng các class màu nền theo ngữ cảnh.</p>
+        <p class="bg-primary text-white">Văn bản quan trọng.</p>
+        <p class="bg-success text-white">Văn bản chỉ ra sự thành công.</p>
+        <p class="bg-info text-white">Văn bản chứa thông tin.</p>
+        <p class="bg-warning text-white">Văn bản này là cảnh báo.</p>
+        <p class="bg-danger text-white">Văn bản thông báo sự nguy hiểm.</p>
+        <p class="bg-secondary text-white">Màu nền phụ.</p>
+        <p class="bg-dark text-white">Màu nền xám đen.</p>
+        <p class="bg-light text-dark">Màu nền xám trắng.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid py-2 m-1 bg-info">
+    <h1>Trang Bootstrap đầu tiên của QuanTriMang</h1>
+
+    <!-- Ví dụ 2: Để Bootstrap tự xử lý bố cục -->
+
+    <div class="row">
+      <div class="col" style="background-color:#FFFF00;">
+        <h3>
+          Fancy display heading
+          <small class="text-muted">With faded secondary text</small>
+        </h3>
+        <p class="lead">
+          This is a lead paragraph. It stands out from regular paragraphs.
+        </p>
+        <p>Khi cần trích dẫn nhiều dòng code bạn sẽ sử dụng pre. Ví dụ dưới đây là một đoạn code Python:</p>
+        <pre>
+        # Nhận đầu vào từ người dùng cho đến khi họ nhập một nguyên âm 
+        nguyenAm = "aeiouAEIOU" 
+        # vòng lặp vô hạn 
+        while True: 
+            m = input("Nhập một nguyên âm: ") 
+            # Điều kiện ở giữa khối lệnh 
+            if m in nguyenAm: 
+                break 
+            print("Đây không phải là nguyên âm. Hãy thử lại!") 
+        # Code by Quantrimang.com 
+        print("Chuẩn rồi, cảm ơn bạn!")
+        </pre>
+      </div>
+      <div class="col" style="background-color:#FFFFE0;">.col</div>
+      <div class="col" style="background-color:#FFFF00;">.col</div>
+    </div>
+    
+    <div class="row">
+      <h2>Cột thích ứng</h2>
+      <p>Thay đổi cửa sổ trình duyệt để thấy sự thay đổi.</p>
+      <p>Các cột sẽ tự động chồng lên nhau khi màn hình có chiều rộng nhỏ hơn 576px.</p>
+      <div class="col-sm-3" style="background-color:#FF1493;">
+        <h1>Nội dung cần làm nổi bật</h1>
+        <h2>Quantrimang.com</h2>
+        <h3>Quantrimang.com</h3>
+        <h4>Quantrimang.com</h4>
+        <h5>Quantrimang.com</h5>
+        <h6>Quantrimang.com</h6>
+      </div>
+      <div class="col-sm-3" style="background-color:#FFC0CB;">.col-sm-3</div>
+      <div class="col-sm-3" style="background-color:#FF1493;">.col-sm-3</div>
+      <div class="col-sm-3" style="background-color:#FFC0CB;">
+        <p class="h1">h1 QuanTriMang.com</p>
+        <p class="h2">h2 QuanTriMang.com</p>
+        <p class="h3">h3 QuanTriMang.com</p>
+        <p class="h4">h4 QuanTriMang.com</p>
+        <p class="h5">h5 QuanTriMang.com</p>
+        <p class="h6">h6 QuanTriMang.com</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>2 cột độ rộng khác nhau</h2>
+      <p>Thay đổi độ rộng của cửa sổ trình duyệt để xem hiệu ứng.</p>
+      <p>Các cột sẽ tự động chồng lên nhau khi màn hình nhỏ hơn 576px.
+        <code>Trich dan code o day nay var arr = [1,3,5]; </code>
+      </p>
+      <div class="col-sm-4" style="background-color:#5d85f1;">
+        <p>Nhấn <kbd>Windows + R</kbd> để mở cửa sổ Run.</p>
+        <dl>
+          <dt>Ứng dụng</dt>
+          <dd>- Word</dd>
+          <dd>- Excel</dd>
+          <dt>Hệ điều hành</dt>
+          <dd>- Windows</dd>
+          <dd>- Linux</dd>
+        </dl>   
+      </div>
+      <div class="col-sm-8" style="background-color:#E0FFFF;">
+        <h1 class="display-1">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+        <h1 class="display-2">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+        <h1 class="display-3">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+        <h1 class="display-4">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+        <h1 class="display-5">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+        <h1 class="display-6">Quantrimang.com <small>sử dụng thẻ small</small></h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+      <div class="col-md-8">
+        <h6 class="display-5">Lam noi bat van ban</h6>
+        <p>Sử dụng mark để <mark>làm nổi bật</mark> văn bản.</p>
+        <p class="mark">Quantrimang.com</p>
+        <p><abbr title="Quản Trị Mạng">QTM</abbr> ra đời năm 2003.</p>
+      </div>
+      <div class="col-6 col-md-4">
+        <blockquote class="blockquote">
+          <p>Khởi nguồn từ một trang web cung cấp kiến thức về mạng, server, các thiết bị mạng, thủ thuật máy tính. Hiện nay, Quantrimang.com đã trở thành mạng xã hội về khoa học công nghệ, mở rộng nội dung để đáp ứng nhu cầu của các thành viên về nhiều lĩnh vực công nghệ hơn như điện thoại, thiết bị thông minh, điện tử, bảo mật máy tính,...</p>
+          <footer class="blockquote-footer">Website Quantrimang.com</footer>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container p-5 my-5 border">
+    <h1>Quản Trị Mạng</h1>
+    <p>Container này có đường viền và một số phần đệm và lề bổ sung.</p>
+  </div>
+  <div class="container p-5 my-5 bg-dark text-white">
+    <h1>Quản Trị Mạng</h1>
+    <p>Container có thêm định dạng nền đen, chữ trắng và một số padding/margin.</p>
+  </div>
+  <div class="container p-5 my-5 bg-primary text-white">
+    <h1>Quản Trị Mạng</h1>
+    <p>Container có thêm định dạng nền xanh, chữ trắng và một số padding/margin.</p>
+  </div>
+  <div class="container-sm border">.container-sm</div>
+
+    <!-- JavaScript mới nhất được biên dịch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
