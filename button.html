@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap 5 - Q.T.Mang [Miki - Tran]</title>
+    <!-- CSS mới nhất và đã được rút gọn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- container BUTTON -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md">
+      <h2>Kiểu button trong Bootstrap</h2>
+      <button type="button" class=btn>Cơ bản</button>
+      <button type="button" class="btn btn-primary">Chính</button>
+      <button type="button" class="btn btn-secondary">Phụ</button>
+      <button type="button" class="btn btn-success">Thành công</button>
+      <button type="button" class="btn btn-info">Thông tin</button>
+      <button type="button" class="btn btn-warning">Cảnh báo</button>
+      <button type="button" class="btn btn-danger">Nguy hiểm</button>
+      <button type="button" class="btn btn-dark">Tối màu</button>
+      <button type="button" class="btn btn-light">Xám nhạt</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div><!-- end col -->
+
+    <div class="col-md">
+      <h2>Button Elements</h2>
+      <a href="#" class="btn btn-success">Link Button</a>
+      <button type="button" class="btn btn-success">Button</button>
+      <input type="button" class="btn btn-success" value="Input Button">
+      <h2>Thành phần của Button</h2>
+      <a href="https://quantrimang.com/" class="btn btn-info" role="button">Button chứa link</a>
+      <button type="button" class="btn btn-info">Button</button>
+      <input type="button" class="btn btn-info" value="Input Button">
+      <input type="submit" class="btn btn-info" value="Submit Button">
+    </div><!-- end col -->
+
+    <div class="col-md">
+      <h2>Button với đường viền</h2>
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block">Chính</button>
+      <button type="button" class="btn btn-outline-secondary">Phụ</button>
+      <button type="button" class="btn btn-outline-success">Thành công</button>
+      <button type="button" class="btn btn-outline-info btn-sm">Thông tin</button>
+      <button type="button" class="btn btn-outline-warning">Cảnh báo</button>
+      <button type="button" class="btn btn-outline-danger btn-block" >Nguy hiểm</button>
+      <button type="button" class="btn btn-outline-dark">Màu tối đậm</button>
+      <button type="button" class="btn btn-outline-light text-dark">Màu xám nhạt</button>
+    </div><!-- end col -->
+  </div> <!-- end row -->
+</div>
+
+<!-- ALTER -->
+<div class="container-fluid bg-info">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Alert Bootstrap</h2>
+      <p>Alert được tạo với class .alert đi kèm với class màu theo ngữ cảnh:</p>
+      <div class="alert alert-success">
+        <strong>Thành công!</strong> Dùng cho một hành động thành công hoặc tích cực.
+      </div>
+
+      <div class="alert alert-success">
+        <strong>Thành công!</strong> Bạn nên <a href="https://quantrimang.com/" class="alert-link">đọc thông báo này</a>.
+      </div>
+
+      <div class="alert alert-info">
+        <strong>Thông tin!</strong> Chỉ ra sự thay đổi thông tin hoặc hành động có tính trung lập.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Cảnh báo!</strong> Dùng cho một cảnh báo có thể cần chú ý.
+      </div>
+
+      <div class="alert alert-warning">
+        <strong>Cảnh báo!</strong> Bạn nên <a href="https://quantrimang.com/" class="alert-link">đọc thông báo này</a>.
+      </div>
+
+      <div class="alert alert-danger">
+        <strong>Nguy hiểm!</strong> Dùng cho một hành động nguy hiểm hoặc có khả năng tiêu cực.
+      </div>
+      <div class="alert alert-primary">
+        <strong>Quan trọng!</strong> Dùng cho một hành động quan trọng.
+      </div>
+      <div class="alert alert-secondary">
+        <strong>Thứ cấp!</strong> Dùng cho một hành động ít quan trọng hơn.
+      </div>
+      <div class="alert alert-dark">
+        <strong>Cảnh báo!</strong> Cảnh báo có màu xám đen.
+      </div>
+      <div class="alert alert-light">
+        <strong>Cảnh báo khác!</strong> Cảnh báo xám nhạt.
+      </div>
+    </div>
+    <div class="col-sm">
+      <h2>Đóng cảnh báo</h2>
+
+    <div class="alert alert-success alert-dismissible fade show">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Thành công!</strong> Quantrimang.com chúc mừng bạn đã học xong Bootstrap.
+    </div> 
+
+    <div class="alert alert-info alert-dismissible fade show">
+      <button type="button" class="btn-close" data-bs-dismiss="alert">&times;</button>
+      <strong>Thông tin!</strong> Bạn sẽ học được nhiều bài học hay về Bootstrap trên QuanTriMang.com.
+    </div>
+    <!-- using icon -->
+      <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <div>
+        Ví dụ về cảnh báo kèm icon
+        </div>
+      </div>
+    </div> 
+    <!-- end col -->
+
+    <div class="col-sm">
+      <!-- canh bao sd nhieu icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+      </svg>
+      <!-- end svg -->
+      
+      <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+          <use xlink:href="#info-fill"/>
+        </svg>
+        <div>
+           Cảnh báo kèm icon
+        </div>
+      </div>
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+          <use xlink:href="#check-circle-fill"/>
+        </svg>
+        <div>
+           Cảnh báo kèm icon
+        </div>
+      </div>
+      <div class="alert alert-warning d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+          <use xlink:href="#exclamation-triangle-fill"/>
+        </svg>
+        <div>
+           Cảnh báo kèm icon
+        </div>
+      </div>
+      <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+          <use xlink:href="#exclamation-triangle-fill"/>
+        </svg>
+        <div>
+          Cảnh báo kèm icon
+        </div>
+      </div>
+    </div><!-- end col -->
+  </div>
+</div>
+
+
+<!-- container BUTTON-->
+  <div class="container p-5 my-5 border">
+    <div class="row">
+      <div class="col-md">
+        <h2>Nút dạng khối</h2>
+        <button type="button" class="btn btn-primary btn-block">Quantrimang.com</button>
+        <button type="button" class="btn btn-success btn-block">Quantrimang.com</button>
+        <br>
+        
+        <h2>Nút dạng khối to</h2>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Quantrimang.com</button>
+        <button type="button" class="btn btn-success btn-lg btn-block">Quantrimang.com</button>
+        <br>
+        
+        <h2>Nút dạng khối nhỏ</h2>
+        <button type="button" class="btn btn-primary btn-sm btn-block">Quantrimang.com</button>
+        <button type="button" class="btn btn-success btn-sm btn-block">Quantrimang.com</button>
+
+      </div><!-- end col -->
+
+      <div class="col-md">
+        <div class="row">
+          <div class="col">
+            <h2>Nhóm nút trên Bootstrap</h2>
+            <p>Lớp .btn-group-vertical tạo một nhóm nút:</p>
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary">QuanTriMang</button>
+              <button type="button" class="btn btn-primary">META.vn</button>
+              <button type="button" class="btn btn-primary">Download</button>
+            </div>
+          </div>
+          <div class="col">
+            <h2>Trạng thái của nút</h2>
+            <button type="button" class="btn btn-primary">Nút bình thường</button>
+            <button type="button" class="btn btn-primary active">Nút có thể click</button>
+            <!-- button sd thuoc tinh [disable] ->khong phai la class; <a> dung class {disabled} -->
+            <button type="button" class="btn btn-primary" disabled>Nút không thể click</button>
+            <a href="#" class="btn btn-primary disabled">Link không thể click</a>
+          </div>
+        </div>
+        
+      </div><!-- end col -->
+
+      <div class="col-md">
+        <div class="row">
+          <div class="col">
+            <h2>Nút đang load</h2>
+            <p>Thêm trạng thái đang load cho nút:</p>
+                                                  
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+            </button>
+
+            <button class="btn btn-primary">
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+            </button>
+            
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-border spinner-border-sm"></span>
+              Loading..
+            </button>
+            
+            <button class="btn btn-primary" disabled>
+              <span class="spinner-grow spinner-grow-sm"></span>
+              Loading..
+            </button>
+          </div>
+          <div class="col">
+            <h3>Group Lager Button</h3>
+            <div class="btn-group btn-group-lg">
+              <button type="button" class="btn btn-primary">QuanTriMang</button>
+              <button type="button" class="btn btn-primary">META.vn</button>
+              <button type="button" class="btn btn-primary">Download</button>
+            </div>
+            <h3>Group normal Button</h3>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">QuanTriMang</button>
+              <button type="button" class="btn btn-primary">META.vn</button>
+              <button type="button" class="btn btn-primary">Download</button>
+            </div>
+            <h3>Group Smaller Button</h3>
+            <div class="btn-group btn-group-sm">
+              <button type="button" class="btn btn-primary">QuanTriMang</button>
+              <button type="button" class="btn btn-primary">META.vn</button>
+              <button type="button" class="btn btn-primary">Download</button>
+            </div>
+          </div><!-- end cold -->
+        </div>
+      </div><!-- end col -->
+    </div> <!-- end row -->
+  </div>
+
+  <!-- container BUTTON3 -->
+  <div class="container p-5 my-5 bg-dark text-white">
+    <div class="row">
+      <div class="col">
+        <h2>Nhóm nút trên Bootstrap</h2>
+        <p>Lớp .btn-group-vertical tạo một nhóm nút:</p>
+        <div class="btn-group-vertical">
+          <button type="button" class="btn btn-primary">QuanTriMang</button>
+          <button type="button" class="btn btn-primary">META.vn</button>
+          <button type="button" class="btn btn-primary">Download</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">QuanTriMang</button>
+          <button type="button" class="btn btn-primary">META.vn</button>
+        </div>
+      </div>
+      <!-- end col -->
+      <div class="col">
+        <h2>Nhóm Menu thả xuống</h2>
+        <p>Các nhóm nút lồng nhau để tạo menu thả xuống:</p>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">QuanTriMang</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">META</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Thiết bị y tế</a></li>
+              <li><a class="dropdown-item" href="#">Đồ gia dụng</a></li>
+            </ul>
+          </div>
+        </div>
+      <!-- end col -->
+      <div class="col"></div>
+      <!-- end col -->
+    </div>
+  </div>
+
+  <!-- container -->
+  <div class="container p-5 my-5 bg-primary text-white">
+    <h1>Quản Trị Mạng</h1>
+    <p>Container có thêm định dạng nền xanh, chữ trắng và một số padding/margin.</p>
+  </div>
+  <!-- container -->
+  <div class="container-sm border">.container-sm</div>
+
+    <!-- JavaScript mới nhất được biên dịch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
