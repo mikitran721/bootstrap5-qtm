@@ -16,10 +16,100 @@
   <!-- container -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md"></div><!-- end col -->
-      <div class="col-md"></div><!-- end col -->
-      <div class="col-md"></div><!-- end col -->
-    </div> <!-- end row -->
+      <div class="col-md">
+        <h2>Menu lựa chọn trên Quantrimang.com</h2>
+        <form action="/action_page.php">
+          <label for="sel1" class="form-label">Danh sách lựa chọn (chọn một):</label>
+          <select class="form-select" id="sel1" name="sellist1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <br>
+
+          <label for="sel2" class="form-label">Danh sách nhiều lựa chọn (giữ phím Shift để chọn nhiều hơn):</label>
+          <select multiple class="form-select" id="sel2" name="sellist2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+
+      </div><!-- end col -->
+      <div class="col-md">
+        <h2>Danh sách dữ liệu - datalist</h2>
+        <form action="/action_page.php">
+          <label for="browser" class="form-label">Lựa chọn một trang web từ danh sách:</label>
+          <input class="form-control" list="browsers" name="browser" id="browser">
+          <datalist id="browsers">
+            <option value="Quantrimang">
+            <option value="VnDoc">
+            <option value="Downloadvn">
+            <option value="Hoatieu">
+            <option value="Downloadcomvn">
+          </datalist>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div><!-- end col -->
+      <div class="col-md">
+        <h2>Checkboxes</h2>
+        <p>Để định dạng checkbox, dùng một phần tử container với class .form-check và thêm .form-check-label vào các
+          label, .form-check-input vào trường nhập dữ liệu với type="checkbox".</p>
+        <p>Biểu mẫu bên dưới chứa 3 ô tích. Lựa chọn đầu tiên được tích theo mặc định và cuối cùng bị vô hiệu hóa:</p>
+        <form action="/action_page.php">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label" for="check1">Quantrimang</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+            <label class="form-check-label" for="check2">Downloadvn</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" disabled>
+            <label class="form-check-label">Hoatieu</label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div><!-- end col -->
+    </div> <!-- end row1 -->
+    <div class="row">
+      <div class="col">
+        <h2>Button radio</h2>
+        <p>Biểu mẫu bên dưới chứa 3 button radio. Lựa chọn đầu tiên mặc định được tích, cuối cùng bị vô hiệu hóa:</p>
+        <form action="/action_page.php">
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+            <label class="form-check-label" for="radio1">Quantrimang</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label" for="radio2">Downloadvn</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" disabled>
+            <label class="form-check-label">VnDoc</label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Gửi</button>
+        </form>
+      </div>
+      <div class="col">
+        <!-- dark node -->
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+          <label class="form-check-label" for="mySwitch">Dark Mode</label>
+        </div>
+      </div>
+      <!-- end col1 -->
+      <div class="col"></div>
+      <!-- end col1 -->
+      <!-- end col1 -->
+    </div>
+    <!-- end row2 -->
   </div>
 
 
