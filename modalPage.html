@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap 5 - Q.T.Mang [Miki - Tran]</title>
+  <!-- CSS mới nhất và đã được rút gọn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ALTER -->
+  <!-- MODAL -->
+  <div class="container">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/logoMiki.png" alt="Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="badge.html">Badge</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="navsBar.html">Navs Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="button.html">Buttons</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ulty1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link QuanTriMang</a></li>
+                <li><a class="dropdown-item" href="#">Công nghệ</a></li>
+                <li><a class="dropdown-item" href="#">Đời sống</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- container <> hien thi popup windows -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <h3>Mẫu modal bằng Bootstrap 5</h3>
+        <p>Click vào nút bấm để mở modal.</p>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Mở popup now
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Modal body.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora porro facere amet
+                eveniet sapiente magnam obcaecati harum accusamus atque facilis, nam quos modi id tenetur odit? Ipsam,
+                obcaecati reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam,
+                asperiores molestiae illum animi deleniti amet, iste quam cumque officiis sit laudantium ratione
+                voluptatibus nemo adipisci, modi ab assumenda rerum.
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero officia iure ab dignissimos
+                  repellendus quia beatae, quibusdam quas reprehenderit fugit adipisci hic laboriosam fugiat totam rerum
+                  necessitatibus placeat ullam. Fugit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam, aut fugiat sequi impedit
+                  quisquam? Quisquam harum cum eius sint nostrum nam, error nemo veniam ad, iure in! Voluptatibus, modi.
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ad amet beatae, quisquam reprehenderit
+                  repudiandae pariatur cumque voluptatum enim, natus eaque officiis dolores corporis alias. Mollitia
+                  alias harum sint ut.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div><!-- end col -->
+      <div class="col-md">
+        <h2>Modal cuộn</h2>
+        <p>Click nút bấm để mở modal này.</p>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Mở modal trên QuanTriMang.com
+        </button>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <h3>Some text to enable scrolling..</h3>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div><!-- end col -->
+        <div class="col-md"></div><!-- end col -->
+      </div> <!-- end row -->
+    </div>
+
+
+
+    <!-- JavaScript mới nhất được biên dịch -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

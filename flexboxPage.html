@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boostrap 5 - Q.T.Mang [Miki - Tran]</title>
+  <!-- CSS mới nhất và đã được rút gọn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ALTER -->
+  <!-- container -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <div class="d-flex p-3 bg-secondary text-white">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div><!-- end col -->
+      <div class="col-md">
+        <h2>Inline Flex</h2>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div><!-- end col -->
+      <div class="col-md"></div><!-- end col -->
+    </div> <!-- end row -->
+  </div>
+
+  <!-- container -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2>Hướng ngang</h2>
+        <p>Dùng .flex-row để các mục flex hiện lần lượt cạnh nhau (mặc định):</p>
+        <div class="d-flex flex-row bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <p>Dùng .flex-row-reverse chỉnh hướng sang bên phải:</p>
+        <div class="d-flex flex-row-reverse bg-secondary">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div>
+      <!-- end col1 -->
+      <div class="col">
+        <h2>Hướng dọc</h2>
+        <p>Dùng .flex-column để hiện các mục theo chiều dọc:</p>
+        <div class="d-flex flex-column mb-3">
+          <div class="p-2 bg-info">NodeJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <p>Dùng .flex-column-reverse để đảo ngược hướng b->t:</p>
+        <div class="d-flex flex-column-reverse">
+          <div class="p-2 bg-info">NodeJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div>
+      <!-- end col2 -->
+    </div>
+    <!-- end row1 -->
+    <div class="row">
+      <div class="col">
+        <p>Dùng class .justify-content-* căn chỉnh mục flex từ đầu (mặc định), cuối, trung tâm, giữa hoặc xung quanh:
+        </p>
+        <div class="d-flex justify-content-start bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <div class="d-flex justify-content-end bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <div class="d-flex justify-content-center bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <div class="d-flex justify-content-between bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <div class="d-flex justify-content-around bg-secondary mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div>
+      <!-- end col2.1 -->
+      <div class="col">
+        <p>Ví dụ dùng .flex-fill: cung width</p>
+        <div class="d-flex mb-3">
+          <div class="p-2 flex-fill bg-info">NODEJS</div>
+          <div class="p-2 flex-fill bg-warning">VnDoc</div>
+          <div class="p-2 flex-fill bg-primary">Downloadvn</div>
+        </div>
+        <p>Ví dụ không dùng .flex-fill:</p>
+        <div class="d-flex mb-3 bg-secondary">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div>
+      <!-- end col2.2 -->
+    </div>
+    <!-- end row2 -->
+    <div class="row">
+      <div class="col">
+        <h2>Grow</h2>
+        <p>Dùng .flex-grow-1:</p>
+        <div class="d-flex mb-3">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 flex-grow-1 bg-primary">Downloadvn</div>
+        </div>
+        <p>Không dùng .flex-grow-1:</p>
+        <div class="d-flex mb-3 bg-secondary">
+          <div class="p-2 bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+      </div>
+      <!-- end col3.1 -->
+      <div class="col">
+        <h4>Hien thi theo order</h4>
+        <div class="d-flex mb-3">
+          <div class="p-2 order-3 bg-info">NODEJS 1</div>
+          <div class="p-2 order-2 bg-warning">NODEJS 2</div>
+          <div class="p-2 order-1 bg-primary">NODEJS 3</div>
+        </div>
+      </div>
+      <!-- end col 3.2 -->
+      <div class="col">
+        <h4>tu dong can le</h4>
+        <div class="d-flex mb-3 bg-secondary">
+          <!-- <h4>Day sang phai</h4> -->
+          <div class="p-2 ms-auto bg-info ">ms-auto</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 bg-primary">Downloadvn</div>
+        </div>
+        <div class="d-flex mb-3 bg-secondary">
+          <!-- <h4>Day sang trai</h4> -->
+          <div class="p-2  bg-info">NODEJS</div>
+          <div class="p-2 bg-warning">VnDoc</div>
+          <div class="p-2 me-auto bg-primary ">me-auto</div>
+        </div>
+      </div>
+      <!-- end col3.3 -->
+    </div>
+    <!-- end row3 -->
+    <div class="row">
+      <div class="col">
+        <h2>Wrap</h2>
+        <p>Kiểm soát cách sắp xếp mục trong một flex container bằng .flex-nowrap (mặc định), .flex-wrap hoặc
+          .flex-wrap-reverse.</p>
+        <p><code>.flex-wrap:</code></p>
+        <div class="d-flex flex-wrap bg-light">
+          <div class="p-2 border">NODEJS 1</div>
+          <div class="p-2 border">NODEJS 2</div>
+          <div class="p-2 border">NODEJS 3</div>
+          <div class="p-2 border">NODEJS 4</div>
+          <div class="p-2 border">NODEJS 5</div>
+          <div class="p-2 border">NODEJS 6</div>
+          <div class="p-2 border">NODEJS 7</div>
+          <div class="p-2 border">NODEJS 8</div>
+          <div class="p-2 border">NODEJS 9</div>
+          <div class="p-2 border">NODEJS 10</div>
+          <div class="p-2 border">NODEJS 11</div>
+          <div class="p-2 border">NODEJS 12</div>
+          <div class="p-2 border">NODEJS 13 </div>
+          <div class="p-2 border">NODEJS 14</div>
+          <div class="p-2 border">NODEJS 15</div>
+          <div class="p-2 border">NODEJS 16</div>
+          <div class="p-2 border">NODEJS 17</div>
+          <div class="p-2 border">NODEJS 18</div>
+          <div class="p-2 border">NODEJS 19</div>
+          <div class="p-2 border">NODEJS 20</div>
+          <div class="p-2 border">NODEJS 21</div>
+          <div class="p-2 border">NODEJS 22</div>
+          <div class="p-2 border">NODEJS 23</div>
+          <div class="p-2 border">NODEJS 24</div>
+          <div class="p-2 border">NODEJS 25</div>
+          <div class="p-2 border">NODEJS 26</div>
+          <div class="p-2 border">NODEJS 27</div>
+          <div class="p-2 border">NODEJS 28</div>
+          <div class="p-2 border">NODEJS 29</div>
+          <div class="p-2 border">NODEJS 30</div>
+          <div class="p-2 border">NODEJS 31</div>
+          <div class="p-2 border">NODEJS 32</div>
+          <div class="p-2 border">NODEJS 33</div>
+          <div class="p-2 border">NODEJS 34</div>
+          <div class="p-2 border">NODEJS 35</div>
+        </div>
+        <br>
+        <p><code>.flex-wrap-reverse:</code></p>
+        <div class="d-flex flex-wrap-reverse bg-light">
+          <div class="p-2 border">NODEJS 1</div>
+          <div class="p-2 border">NODEJS 2</div>
+          <div class="p-2 border">NODEJS 3</div>
+          <div class="p-2 border">NODEJS 4</div>
+          <div class="p-2 border">NODEJS 5</div>
+          <div class="p-2 border">NODEJS 6</div>
+          <div class="p-2 border">NODEJS 7</div>
+          <div class="p-2 border">NODEJS 8</div>
+          <div class="p-2 border">NODEJS 9</div>
+          <div class="p-2 border">NODEJS 10</div>
+          <div class="p-2 border">NODEJS 11</div>
+          <div class="p-2 border">NODEJS 12</div>
+          <div class="p-2 border">NODEJS 13 </div>
+          <div class="p-2 border">NODEJS 14</div>
+          <div class="p-2 border">NODEJS 15</div>
+          <div class="p-2 border">NODEJS 16</div>
+          <div class="p-2 border">NODEJS 17</div>
+          <div class="p-2 border">NODEJS 18</div>
+          <div class="p-2 border">NODEJS 19</div>
+          <div class="p-2 border">NODEJS 20</div>
+          <div class="p-2 border">NODEJS 21</div>
+          <div class="p-2 border">NODEJS 22</div>
+          <div class="p-2 border">NODEJS 23</div>
+          <div class="p-2 border">NODEJS 24</div>
+          <div class="p-2 border">NODEJS 25</div>
+          <div class="p-2 border">NODEJS 26</div>
+          <div class="p-2 border">NODEJS 27</div>
+          <div class="p-2 border">NODEJS 28</div>
+          <div class="p-2 border">NODEJS 29</div>
+          <div class="p-2 border">NODEJS 30</div>
+          <div class="p-2 border">NODEJS 31</div>
+          <div class="p-2 border">NODEJS 32</div>
+          <div class="p-2 border">NODEJS 33</div>
+          <div class="p-2 border">NODEJS 34</div>
+          <div class="p-2 border">NODEJS 35</div>
+        </div>
+        <br>
+        <p><code>.flex-nowrap:</code></p>
+        <div class="d-flex flex-nowrap bg-light">
+          <div class="p-2 border">NODEJS 1</div>
+          <div class="p-2 border">NODEJS 2</div>
+          <div class="p-2 border">NODEJS 3</div>
+          <div class="p-2 border">NODEJS 4</div>
+          <div class="p-2 border">NODEJS 5</div>
+          <div class="p-2 border">NODEJS 6</div>
+          <div class="p-2 border">NODEJS 7</div>
+          <div class="p-2 border">NODEJS 8</div>
+          <div class="p-2 border">NODEJS 9</div>
+          <div class="p-2 border">NODEJS 10</div>
+          <div class="p-2 border">NODEJS 11</div>
+          <div class="p-2 border">NODEJS 12</div>
+          <div class="p-2 border">NODEJS 13 </div>
+          <div class="p-2 border">NODEJS 14</div>
+          <div class="p-2 border">NODEJS 15</div>
+          <div class="p-2 border">NODEJS 16</div>
+          <div class="p-2 border">NODEJS 17</div>
+          <div class="p-2 border">NODEJS 18</div>
+          <div class="p-2 border">NODEJS 19</div>
+          <div class="p-2 border">NODEJS 20</div>
+          <div class="p-2 border">NODEJS 21</div>
+          <div class="p-2 border">NODEJS 22</div>
+          <div class="p-2 border">NODEJS 23</div>
+          <div class="p-2 border">NODEJS 24</div>
+          <div class="p-2 border">NODEJS 25</div>
+          <div class="p-2 border">NODEJS 26</div>
+          <div class="p-2 border">NODEJS 27</div>
+          <div class="p-2 border">NODEJS 28</div>
+          <div class="p-2 border">NODEJS 29</div>
+          <div class="p-2 border">NODEJS 30</div>
+          <div class="p-2 border">NODEJS 31</div>
+          <div class="p-2 border">NODEJS 32</div>
+          <div class="p-2 border">NODEJS 33</div>
+          <div class="p-2 border">NODEJS 34</div>
+          <div class="p-2 border">NODEJS 35</div>
+        </div>
+      </div>
+      <!-- end col4.1 -->
+    </div>
+  </div>
+  <!-- end col4.2 -->
+  <!-- end row4 -->
+  <div class="row">
+    <div class="col">
+      <p>.align-content-start (default):</p>
+      <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+        <div class="p-2 border">Quantrimang 1</div>
+        <div class="p-2 border">Quantrimang 2</div>
+        <div class="p-2 border">Quantrimang 3</div>
+        <div class="p-2 border">Quantrimang 4</div>
+        <div class="p-2 border">Quantrimang 5</div>
+        <div class="p-2 border">Quantrimang 6</div>
+        <div class="p-2 border">Quantrimang 7</div>
+        <div class="p-2 border">Quantrimang 8</div>
+        <div class="p-2 border">Quantrimang 9</div>
+        <div class="p-2 border">Quantrimang 10</div>
+        <div class="p-2 border">Quantrimang 11</div>
+        <div class="p-2 border">Quantrimang 12</div>
+        <div class="p-2 border">Quantrimang 13 </div>
+        <div class="p-2 border">Quantrimang 14</div>
+        <div class="p-2 border">Quantrimang 15</div>
+        <div class="p-2 border">Quantrimang 16</div>
+        <div class="p-2 border">Quantrimang 17</div>
+        <div class="p-2 border">Quantrimang 18</div>
+        <div class="p-2 border">Quantrimang 19</div>
+        <div class="p-2 border">Quantrimang 20</div>
+        <div class="p-2 border">Quantrimang 21</div>
+        <div class="p-2 border">Quantrimang 22</div>
+        <div class="p-2 border">Quantrimang 23</div>
+        <div class="p-2 border">Quantrimang 24</div>
+        <div class="p-2 border">Quantrimang 25</div>
+      </div>
+      <br>
+      <p>.align-content-end:</p>
+      <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+        <div class="p-2 border">Quantrimang 1</div>
+        <div class="p-2 border">Quantrimang 2</div>
+        <div class="p-2 border">Quantrimang 3</div>
+        <div class="p-2 border">Quantrimang 4</div>
+        <div class="p-2 border">Quantrimang 5</div>
+        <div class="p-2 border">Quantrimang 6</div>
+        <div class="p-2 border">Quantrimang 7</div>
+        <div class="p-2 border">Quantrimang 8</div>
+        <div class="p-2 border">Quantrimang 9</div>
+        <div class="p-2 border">Quantrimang 10</div>
+        <div class="p-2 border">Quantrimang 11</div>
+        <div class="p-2 border">Quantrimang 12</div>
+        <div class="p-2 border">Quantrimang 13 </div>
+        <div class="p-2 border">Quantrimang 14</div>
+        <div class="p-2 border">Quantrimang 15</div>
+        <div class="p-2 border">Quantrimang 16</div>
+        <div class="p-2 border">Quantrimang 17</div>
+        <div class="p-2 border">Quantrimang 18</div>
+        <div class="p-2 border">Quantrimang 19</div>
+        <div class="p-2 border">Quantrimang 20</div>
+        <div class="p-2 border">Quantrimang 21</div>
+        <div class="p-2 border">Quantrimang 22</div>
+        <div class="p-2 border">Quantrimang 23</div>
+        <div class="p-2 border">Quantrimang 24</div>
+        <div class="p-2 border">Quantrimang 25</div>
+      </div>
+      <br>
+      <p>.align-content-center:</p>
+      <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+        <div class="p-2 border">Quantrimang 1</div>
+        <div class="p-2 border">Quantrimang 2</div>
+        <div class="p-2 border">Quantrimang 3</div>
+        <div class="p-2 border">Quantrimang 4</div>
+        <div class="p-2 border">Quantrimang 5</div>
+        <div class="p-2 border">Quantrimang 6</div>
+        <div class="p-2 border">Quantrimang 7</div>
+        <div class="p-2 border">Quantrimang 8</div>
+        <div class="p-2 border">Quantrimang 9</div>
+        <div class="p-2 border">Quantrimang 10</div>
+        <div class="p-2 border">Quantrimang 11</div>
+        <div class="p-2 border">Quantrimang 12</div>
+        <div class="p-2 border">Quantrimang 13 </div>
+        <div class="p-2 border">Quantrimang 14</div>
+        <div class="p-2 border">Quantrimang 15</div>
+        <div class="p-2 border">Quantrimang 16</div>
+        <div class="p-2 border">Quantrimang 17</div>
+        <div class="p-2 border">Quantrimang 18</div>
+        <div class="p-2 border">Quantrimang 19</div>
+        <div class="p-2 border">Quantrimang 20</div>
+        <div class="p-2 border">Quantrimang 21</div>
+        <div class="p-2 border">Quantrimang 22</div>
+        <div class="p-2 border">Quantrimang 23</div>
+        <div class="p-2 border">Quantrimang 24</div>
+        <div class="p-2 border">Quantrimang 25</div>
+      </div>
+      <br>
+      <p>.align-content-around:</p>
+      <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+        <div class="p-2 border">Quantrimang 1</div>
+        <div class="p-2 border">Quantrimang 2</div>
+        <div class="p-2 border">Quantrimang 3</div>
+        <div class="p-2 border">Quantrimang 4</div>
+        <div class="p-2 border">Quantrimang 5</div>
+        <div class="p-2 border">Quantrimang 6</div>
+        <div class="p-2 border">Quantrimang 7</div>
+        <div class="p-2 border">Quantrimang 8</div>
+        <div class="p-2 border">Quantrimang 9</div>
+        <div class="p-2 border">Quantrimang 10</div>
+        <div class="p-2 border">Quantrimang 11</div>
+        <div class="p-2 border">Quantrimang 12</div>
+        <div class="p-2 border">Quantrimang 13 </div>
+        <div class="p-2 border">Quantrimang 14</div>
+        <div class="p-2 border">Quantrimang 15</div>
+        <div class="p-2 border">Quantrimang 16</div>
+        <div class="p-2 border">Quantrimang 17</div>
+        <div class="p-2 border">Quantrimang 18</div>
+        <div class="p-2 border">Quantrimang 19</div>
+        <div class="p-2 border">Quantrimang 20</div>
+        <div class="p-2 border">Quantrimang 21</div>
+        <div class="p-2 border">Quantrimang 22</div>
+        <div class="p-2 border">Quantrimang 23</div>
+        <div class="p-2 border">Quantrimang 24</div>
+        <div class="p-2 border">Quantrimang 25</div>
+      </div>
+      <br>
+      <p>.align-content-stretch:</p>
+      <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+        <div class="p-2 border">Quantrimang 1</div>
+        <div class="p-2 border">Quantrimang 2</div>
+        <div class="p-2 border">Quantrimang 3</div>
+        <div class="p-2 border">Quantrimang 4</div>
+        <div class="p-2 border">Quantrimang 5</div>
+        <div class="p-2 border">Quantrimang 6</div>
+        <div class="p-2 border">Quantrimang 7</div>
+        <div class="p-2 border">Quantrimang 8</div>
+        <div class="p-2 border">Quantrimang 9</div>
+        <div class="p-2 border">Quantrimang 10</div>
+        <div class="p-2 border">Quantrimang 11</div>
+        <div class="p-2 border">Quantrimang 12</div>
+        <div class="p-2 border">Quantrimang 13 </div>
+        <div class="p-2 border">Quantrimang 14</div>
+        <div class="p-2 border">Quantrimang 15</div>
+        <div class="p-2 border">Quantrimang 16</div>
+        <div class="p-2 border">Quantrimang 17</div>
+        <div class="p-2 border">Quantrimang 18</div>
+        <div class="p-2 border">Quantrimang 19</div>
+        <div class="p-2 border">Quantrimang 20</div>
+        <div class="p-2 border">Quantrimang 21</div>
+        <div class="p-2 border">Quantrimang 22</div>
+        <div class="p-2 border">Quantrimang 23</div>
+        <div class="p-2 border">Quantrimang 24</div>
+        <div class="p-2 border">Quantrimang 25</div>
+      </div>
+    </div>
+    <!-- end col5.1 -->
+  </div>
+  <!-- end row5 -->
+  </div>
+
+  <!-- JavaScript mới nhất được biên dịch -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
